@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="cart.css">
+<link rel="stylesheet" type="text/css" href="navbar.css">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<head>
+    <title></title>
+</head>
+<body>
+<nav>
+<ul>
+    <a href="Iaproject.html"><img class="logo" src="image/nikelogo1.png"></a>
+    <li class="shoes"><a href="pageshoes.html">Shoes</a></li>
+    <li class="cloth"><a href="pagecloth.html">Clothing</a></li>
+    <li class="pants"><a href="pagepants.html">pants</a></li>
+</ul>
+</nav>
+<section><p class="text">Thanks for visit My Page</p></section>
+
+<div class="container">
+	<img src="image/shoesmenu/jordan5.png">
+	<img src="image/shoesmenu/commingsoon.jpg">
+	<div class="intro">
+	<p>Product Name: Air Jordan 1 Mid SE</p>
+	<p>Tyape: Men's Shoes</p>
+	<p>Price: RM495</p>
+	<p>Colour: White & Black Mix</p>
+	<p class="stock">(10 stock left)</p>
+
+
+	<!--------------------------------------------------------  button  ------------------------------------------>
+
+	<button class="buy-button" onclick="openForm()">BUY</button>
+    
+    <div class="popup-form" id="form">
+    	<form class="form-container">
+        <h1>Information</h1>
+
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" id="name" required>
+
+    <label for="age"><b>Age</b></label>
+    <input type="number" placeholder="Enter Age" name="age" id="age" required>
+
+    <label for="PhoneNo"><b>Phone No.</b></label>
+    <input type="number" placeholder="Enter Tel" name="phone" id="phone" maxlength="12" required>
+
+    <label for="Country"><b>Country</b></label>
+    <input type="text" placeholder="Enter Country" name="country" id="country" required>
+
+    <label for="Address"><b>Adress</b></label>
+    <input type="text" placeholder="Enter Adress" name="address" id="address" required style="height: 10em">
+    <div class="abc">
+    <button type="sumbit" class="button Purchase" onclick="showresult()" value="sumbit">Purchase</button></div>
+    <button type="button" class="button Back" onclick="closeForm()">Back</button>
+  </form>
+
+    </div>
+	</div>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("form").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("form").style.display = "none";
+}
+
+function name(){
+				var name = document.getElementById('name');
+				var namee = name.value.length;
+				if(namee === 0){
+					alert('Please fill you all information!!');
+					return false;
+				}else{
+					return true;
+				}
+			}
+
+function age(){
+				var age = document.getElementById('age');
+				var agee = age.value.length;
+				if(agee === 0){
+					alert('Please fill you all information!!');
+					return false;
+				}else{
+					return true;
+				}	
+			}
+function phone(){
+				var phoneno = document.getElementById('phone');
+				var phonenoo = phoneno.value.length;
+				if(phonenoo === 0){
+					alert('Please fill you all information!!');
+					return false;
+				}else{
+					return true;
+				}	
+			}
+function country(){
+				var country = document.getElementById('country');
+				var countryy = country.value.length;
+				if(countryy === 0){
+					alert('Please fill you all information!!');
+					return false;
+				}else{
+					return true;
+				}
+			}
+function address(){
+				var add = document.getElementById('address');
+				var addd = add.value.length;
+				if(addd === 0){
+					alert('Please fill you all information!!');
+					return false;
+				}else{
+					return true;
+				}	
+			}
+
+function showresult(){
+				if (name()){
+					if (age()) {
+						if (phone()) {
+							if (country()) {
+								if (address()) {
+								alert("~~~~~~~Order List~~~~~~~~\nProduct Name: Air Jordan 1 Mid SE\nTyape: Men's Shoes\nPrice: RM495\nColour: White & Black Mix\nQuantity: 1\n9 stock left\n\nThanks For Your Purchase~")
+								window.location.reload();
+							}
+						}
+					}
+				}
+			}
+				return false;
+		}
+
+
+</script>
+
+</body>
+</html>

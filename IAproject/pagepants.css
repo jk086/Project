@@ -1,0 +1,158 @@
+body{
+	margin: 0;
+	background-color: white;
+	color: black;
+
+}
+
+/*----------------------------------------------------------- slider code at here ----------------------------------------------*/
+slider {
+ display: block;
+ width: 100%;
+ height: 100%;
+ background-color: #1f1f1f;
+ overflow: hidden;
+
+ 
+}
+
+slider > * {
+ position: absolute;
+ display: block;
+ margin-top: 0px;
+ width: 100%;
+ height: 30em;
+ background: #1f1f1f;
+ animation: slide 12s infinite;
+ overflow: hidden;
+}
+
+slide:nth-child(1){
+ left: 0%;
+ animation-delay: -1s;
+ background-image: url(image/pantsbanner/nikebanner1.jpg);
+ background-size: cover;
+ background-position: center;
+}
+
+slide:nth-child(2){
+ left: 0%;
+ animation-delay: 2s;
+ background-image: url(image/pantsbanner/nikebanner2.jpg);
+ background-size: cover;
+ background-position: center;
+}
+
+slide:nth-child(3){
+ left: 0%;
+ animation-delay: 5s;
+ background-image: url(image/pantsbanner/nikebanner3.jpg);
+ background-size: cover;
+ background-position: center;
+}
+
+slide:nth-child(4){
+ left: 0%;
+ animation-delay: 8s;
+ background-image: url(image/pantsbanner/nikebanner4.jpg);
+ background-size: cover;
+ background-position: center;
+}
+
+slide p {
+ font-family: Comfortaa;
+ font-size: 70px;
+ text-align: center;
+ display: inline-block;
+ width: 100%;
+ margin-top: 340px;
+ color: #fff;
+}
+
+@keyframes slide {
+ 0% { left: 100%; width: 100%; }
+ 5% { left: 0%; }
+ 25% { left: 0%; }
+ 30% { left: -100%; width: 100%; }
+ 30.0001% { left: -100%; width: 0%; }
+ 100% { left: 100%; width: 0%; }
+}
+
+
+/*-------------------------------------------------------- slider end here ---------------------------------------------------*/
+
+/*--------------------------------------------------------- Scroll Menu ------------------------------------------------------*/
+section h2.Nike{
+	margin-top: 550px;
+	margin-left: 4em;
+	font-family: cursive;
+}
+
+section h2.Jordan{
+	margin-top: 50px;
+	margin-left: 4em;
+	font-family: cursive;
+}
+div.scrollmenu a img{
+
+	width: 100%;
+}
+
+div.scrollmenu {
+	background-color: white;
+	overflow: auto;
+	white-space: nowrap;
+}
+
+div.menu{
+    width:25em;
+	display: block;
+	float: left;
+    margin-right: 1px;
+    margin-bottom: 1px;
+
+}
+
+div.index{
+	width: 180em;
+	margin-left: 5em;
+
+}
+
+figure{
+	margin: 1em;
+}
+
+span{
+    float: right;
+}
+
+figcaption{
+	color: black;
+	font-family: sans-serif;
+
+}
+figcaption p{
+	margin-top: -1em;
+}
+
+figcaption p.colour{
+	margin-top: 1em;
+}
+
+#ad{
+	text-decoration: none;
+}
+
+footer{
+    color: black;
+    font-size: 15px;
+    text-align:left;
+    background-color: lightgrey;
+    height: 1.5em;
+
+}
+
+div.test111{
+	margin-bottom: 50em;
+}

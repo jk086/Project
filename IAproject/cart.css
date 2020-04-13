@@ -1,0 +1,88 @@
+body{
+	margin: 0;
+	background-color: white;
+	height: 100%;
+	color: black;
+	font-family: sans-serif;
+}
+
+section{
+    display: flex;
+	height: 4em;
+	background-color: #DCDCDC;
+
+}
+
+p.text{
+	display: flex;
+	margin:auto;    
+}
+
+div.container{
+	display: flex;
+	margin-top: 8%;
+	margin-left: 10%;
+}
+
+div.intro{
+	margin-left: 5%;
+
+}
+
+.stock{
+	color: orange
+}
+
+.buy-button{
+
+	background-color: #333;
+	color: white;
+	border: none;
+	padding: 1em 2em;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.popup-form{
+    display: none;
+    position: absolute;
+    top: 4em;
+    right: 30%;
+    border: 20px solid #f1f1f1;
+    z-index: 9;
+}
+
+.form-container input[type=text], .form-container input[type=number]{
+    width: 100%;
+    padding: 15px 0 15px 5px;
+    margin: 5px 0 10px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container {
+    max-width: 500px;
+    padding: 10px;
+    background-color: white;
+}
+
+.form-container .button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    margin-bottom:10px;
+    opacity: 0.5;
+    float: left;
+}
+
+.form-container .Back{
+	background-color: red;
+	margin-left: 1em;
+}
+
+.form-container .button:hover{
+	opacity: 1;
+}
